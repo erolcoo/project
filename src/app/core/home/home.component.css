@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1620591687688-b1e645ca4cf0?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  color: white;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-sizing: border-box;
+
+}
+
+
+input[type="submit"] {
+  background-color: lightskyblue;
+  color: darkslategray;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: darkslategray;
+  color: black
+}
+
+nav div {
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  color: white;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: lightskyblue;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a:hover {
+  background-color: darkslategray;
+  color: black;
+  cursor: pointer;
+}
