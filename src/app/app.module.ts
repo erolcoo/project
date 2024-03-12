@@ -1,19 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { CoreModule } from './core/core.module';
+import { HomeComponent } from './home/home.component';
+import { SportCarsComponent } from './sport-cars/sport-cars.component';
+import { SuvCarsComponent } from './suv-cars/suv-cars.component';
+import { HybridCarsComponent } from './hybrid-cars/hybrid-cars.component';
+import { SpecificationComponent } from './specification/specification.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    SportCarsComponent,
+    SuvCarsComponent,
+    HybridCarsComponent,
+    SpecificationComponent,
+    ErrorPageComponent,
+    LoginComponent,
+    RegisterComponent,
+    LogoutComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,CoreModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

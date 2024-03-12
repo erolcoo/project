@@ -1,15 +1,26 @@
 import { NgModule } from '@angular/core';
+import { HomeComponent } from './home/home.component';
+import { SportCarsComponent } from './sport-cars/sport-cars.component';
+import { SuvCarsComponent } from './suv-cars/suv-cars.component';
+import { HybridCarsComponent } from './hybrid-cars/hybrid-cars.component';
+import { SpecificationComponent } from './specification/specification.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './core/home/home.component';
-import { SportsgarageComponent } from './core/sportsgarage/sportsgarage.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path:'sportgarage', component: SportsgarageComponent}
-];
+  { path: '', pathMatch: 'full', redirectTo: '/home' },
+  { path: 'home', component: HomeComponent },
+  { path: 'sport-cars', component: SportCarsComponent },
+  { path: 'suv-cars', component: SuvCarsComponent },
+  { path: 'hybrid-cars', component: HybridCarsComponent },
+  { path: 'specification', component: SpecificationComponent },
+  { path: 'error', component: ErrorPageComponent },
+  {path : 'login', component: LoginComponent},
+  { path : 'register', component: RegisterComponent},
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+];
+@NgModule({ imports: [RouterModule.forRoot(routes)], exports: [RouterModule] })
+export class AppRoutingModule {}
