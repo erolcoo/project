@@ -11,7 +11,6 @@ img {
 }
 
 div {
-
   background-image: url("https://images.unsplash.com/photo-1604275291560-55f54cec0e4d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center;
@@ -22,14 +21,13 @@ div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
 }
 
 .container div {
   height: auto;
   background-color: black;
   color: white;
-  padding: auto;
   border-radius: 10px;
 }
 
@@ -38,6 +36,7 @@ div {
   margin-bottom: 30px;
   padding: 10px;
   text-align: center;
+
 }
 
 .box h3,
