@@ -19,19 +19,9 @@ h1 {
   text-align: center;
   font-style: italic;
   font-size: bold;
-  padding-top: 30px;
+  padding-top: 15px;
   color: lightskyblue;
 }
-/* .container {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-  background-image: url('https://images.unsplash.com/photo-1620591687688-b1e645ca4cf0?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
 
 nav div {
   justify-content: space-between;
@@ -55,10 +45,6 @@ nav a {
   background-color: lightskyblue;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-}
 
 nav a:hover {
   background-color: darkslategray;
