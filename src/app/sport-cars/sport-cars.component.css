@@ -15,24 +15,24 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
 }
 
 .container div {
   height: auto;
   background-color: black;
   color: white;
+  padding: auto;
   border-radius: 10px;
 }
 
 .box {
   width: 650px;
+  height: auto;
   margin-bottom: 30px;
   padding: 10px;
   text-align: center;
-
 }
-
 .box h3,
 .box a {
   display: block;
