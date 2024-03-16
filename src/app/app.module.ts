@@ -19,6 +19,9 @@ import { MyComponentComponent } from './my-component/my-component.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { SharedModule } from './shared/shared.module';
 import { DeleteAccountComponent } from './delete-account/delete-account.component';
+import { RedirectSportsCarComponent } from './redirect-sports-car/redirect-sports-car.component';
+import { RedirectSuvCarComponent } from './redirect-suv-car/redirect-suv-car.component';
+import { RedirectHybridCarComponent } from './redirect-hybrid-car/redirect-hybrid-car.component';
 
 
 @NgModule({
@@ -36,6 +39,9 @@ import { DeleteAccountComponent } from './delete-account/delete-account.componen
     MyComponentComponent,
     WelcomePageComponent,
     DeleteAccountComponent,
+    RedirectSportsCarComponent,
+    RedirectSuvCarComponent,
+    RedirectHybridCarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule,FormsModule,SharedModule,ReactiveFormsModule,],
   providers: [],

@@ -10,10 +10,12 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { DeleteAccountComponent } from './delete-account/delete-account.component';
+import { RedirectSportsCarComponent } from './redirect-sports-car/redirect-sports-car.component';
+import { RedirectSuvCarComponent } from './redirect-suv-car/redirect-suv-car.component';
+import { RedirectHybridCarComponent } from './redirect-hybrid-car/redirect-hybrid-car.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/welcome-page' },
-  // { path: '**', redirectTo: '/error' },
   { path: 'welcome-page', component: WelcomePageComponent },
   { path: 'home', component: HomeComponent },
   { path: 'sport-cars', component: SportCarsComponent },
@@ -23,8 +25,11 @@ const routes: Routes = [
   { path: 'error', component: ErrorPageComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  {path: 'logout', component: WelcomePageComponent },
-  {path: 'delete-account' ,component: DeleteAccountComponent},
+  { path: 'logout', component: WelcomePageComponent },
+  { path: 'delete-account', component: DeleteAccountComponent },
+  { path: 'redirect-sports-car', component: RedirectSportsCarComponent },
+  { path: 'redirect-suv-cars', component: RedirectSuvCarComponent },
+  { path: 'redirect-hybrid-cars', component: RedirectHybridCarComponent },
 ];
 @NgModule({ imports: [RouterModule.forRoot(routes)], exports: [RouterModule] })
 export class AppRoutingModule {}

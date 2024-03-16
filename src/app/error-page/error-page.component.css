@@ -24,9 +24,12 @@ h1 {
   margin-bottom: 30px;
 }
 p {
-  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 32px;
   color: black;
   margin: 10px 0;
+  margin-left: 50px;
 }
 nav a {
   font-family: "Times New Roman", Times, serif;
