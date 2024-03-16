@@ -1,13 +1,30 @@
 <div class="container">
-  <form action="/login" method="post">
+  <form class="login" #form="ngForm" (ngSubmit)="login(form)">
     <div>
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username" required />
+       <h2>login</h2>
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder=""
+        ngModel
+        #inputEmail="ngModel"
+        required
+      />
+      <ng-container *ngIf="inputEmail.touched">
+        <p class="error" *ngIf="inputEmail.errors?.['required']">
+          Email is required!
+        </p>
+      </ng-container>
     </div>
     <div>
       <label for="password">Password</label>
       <input type="password" id="password" name="password" required />
     </div>
-    <button type="submit" @click>Login</button>
+    <button type="submit">Login</button>
+    <div>
+      <a class="nav-link active" aria-current="page" [routerLink]="['/register']">Go to Register</a>
+    </div>
   </form>
 </div>

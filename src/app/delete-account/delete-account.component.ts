@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { UserService } from '../user.service';
 
-
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-delete-account',
+  templateUrl: './delete-account.component.html',
+  styleUrls: ['./delete-account.component.css']
 })
-export class HomeComponent {
+export class DeleteAccountComponent {
   constructor(private userService: UserService) {}
 
   onDeleteAccount() {
